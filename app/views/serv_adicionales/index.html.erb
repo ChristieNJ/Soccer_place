@@ -1,0 +1,27 @@
+<h1>Listing serv_adicionales</h1>
+
+<table>
+  <tr>
+    <th>Tipo</th>
+    <th>Descripcion</th>
+    <th>Tarifa</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @serv_adicionales.each do |serv_adicionale| %>
+  <tr>
+    <td><%= serv_adicionale.Tipo %></td>
+    <td><%= serv_adicionale.descripcion %></td>
+    <td><%= serv_adicionale.tarifa %></td>
+    <td><%= link_to 'Show', serv_adicionale %></td>
+    <td><%= link_to 'Edit', edit_serv_adicionale_path(serv_adicionale) %></td>
+    <td><%= link_to 'Destroy', serv_adicionale, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Serv adicionale', new_serv_adicionale_path %>

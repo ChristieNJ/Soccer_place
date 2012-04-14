@@ -1,0 +1,41 @@
+<%= form_for(@local) do |f| %>
+  <% if @local.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@local.errors.count, "error") %> prohibited this local from being saved:</h2>
+
+      <ul>
+      <% @local.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :distrito %><br />
+    <%= f.text_field :distrito %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_fijo %><br />
+    <%= f.text_field :telefono_fijo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

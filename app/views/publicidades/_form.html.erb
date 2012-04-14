@@ -1,0 +1,45 @@
+<%= form_for(@publicidade) do |f| %>
+  <% if @publicidade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@publicidade.errors.count, "error") %> prohibited this publicidade from being saved:</h2>
+
+      <ul>
+      <% @publicidade.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :contenido %><br />
+    <%= f.text_field :contenido %>
+  </div>
+  <div class="field">
+    <%= f.label :FecInicio %><br />
+    <%= f.text_field :FecInicio %>
+  </div>
+  <div class="field">
+    <%= f.label :FecFin %><br />
+    <%= f.text_field :FecFin %>
+  </div>
+  <div class="field">
+    <%= f.label :Tarifa %><br />
+    <%= f.text_field :Tarifa %>
+  </div>
+  <div class="field">
+    <%= f.label :num_clicks %><br />
+    <%= f.number_field :num_clicks %>
+  </div>
+  <div class="field">
+    <%= f.label :ubicacion %><br />
+    <%= f.number_field :ubicacion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

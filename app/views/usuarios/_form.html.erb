@@ -1,0 +1,62 @@
+<%= form_for(@usuario) do |f| %>
+  <% if @usuario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+
+      <ul>
+      <% @usuario.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tip_persona %><br />
+  
+	<%= select( :tip_persona, "id", { "Duenio" => "1", "Cliente" => "2"}) %>
+  </div>
+  <div>
+
+</did>
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :apellidos %><br />
+    <%= f.text_field :apellidos %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %><br />
+ <%= select( :sexo, :id, { "Femenino" => "1", "Masculino" => "2"}) %>
+  </div>
+  <div class="field">
+    <%= f.label :tip_doc %><br />
+   <%= select( :tip_doc, :id, { "DNI" => "1", "RUC" => "2"})  %>
+  </div>
+  <div class="field">
+    <%= f.label :nro_doc %><br />
+    <%= f.text_field :nro_doc %>
+  </div>
+  <div class="field">
+    <%= f.label :correo %><br />
+    <%= f.text_field :correo %>
+  </div>
+  <div class="field">
+    <%= f.label :pass %><br />
+    <%= f.text_field :pass %>
+  </div>
+  <div class="field">
+    <%= f.label :fec_nac %><br />
+    <%= f.text_field :fec_nac %>
+  </div>
+  <div class="field">
+    <%= f.label :celular %><br />
+    <%= f.text_field :celular %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

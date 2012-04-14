@@ -1,0 +1,59 @@
+<%= form_for(@turno) do |f| %>
+  <% if @turno.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@turno.errors.count, "error") %> prohibited this turno from being saved:</h2>
+
+      <ul>
+      <% @turno.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :lunes %><br />
+
+	<%= f.check_box :lunes, {}, 1, 0  %>
+  </div>
+  <div class="field">
+    <%= f.label :martes %><br />
+ 
+	<%= f.check_box :martes, {}, 1, 0  %>
+  </div>
+  <div class="field">
+    <%= f.label :miercoles %><br />
+  <%= f.check_box :miercoles, {}, 1, 0  %>
+  </div>
+  <div class="field">
+    <%= f.label :jueves %><br />
+ <%= f.check_box :jueves, {}, 1, 0  %>
+  </div>
+  <div class="field">
+    <%= f.label :viernes %><br />
+ <%= f.check_box :viernes, {}, 1, 0  %>
+  </div>
+  <div class="field">
+    <%= f.label :sabado %><br />
+     <%= f.check_box :sabado, {}, 1, 0  %>
+  </div>
+  <div class="field">
+    <%= f.label :domingo %><br />
+      <%= f.check_box :domingo, {}, 1, 0  %>
+  </div>
+  <div class="field">
+    <%= f.label :HoraIni %><br />
+    <%= f.text_field :HoraIni %>
+  </div>
+  <div class="field">
+    <%= f.label :HoraFin %><br />
+    <%= f.text_field :HoraFin %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
