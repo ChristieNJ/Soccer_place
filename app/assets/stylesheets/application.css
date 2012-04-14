@@ -8,6 +8,411 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require_tree
  *= require_self
- *= require_tree .
+  .
 */
+/* CSS Document */
+/* CSS Document */
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;  /*-- Enables font size scaling in MSIE  --*/
+	margin:0;
+	padding:0;
+	text-align:center;
+	color:#fff;
+	background:url(../images/bg_pattern.jpg) repeat;
+	line-height:normal;
+}
+html > body {
+	font-size:9.5pt;
+}
+html {
+	min-height: 100%;
+	height:auto;	
+}
+#top {		/*-- Nomensa Method to hide the content --*/
+	position:absolute;
+	left:-999em;
+	width:990em;
+}
+form,table,p,h1,h2,h3,h4,h5,h6,ul,li,div,dl {
+	margin:0;
+	padding:0;
+}
+li {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+a {
+	text-decoration:none;
+	outline:none;
+	color:#000;
+}
+a:hover {
+	text-decoration:none;
+}
+img {
+	border:0;
+	vertical-align:top;
+}
+input , select {
+	vertical-align:middle;
+	}
+.clsFloatLeft {
+	float:left;
+}
+.clsFloatRight {
+	float:right;
+}
+/* end of common */
+/* clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {display: inline-table;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+/* End hide from IE-mac */
+/* end of  clearfix */
+#container {
+	width:970px;
+	margin:0 auto;
+	text-align:left;
+}
+/*HEADER*/
+#header h1 a{
+	overflow:hidden;
+	display:block;
+}
+/*LEFT HEADER*/
+#selLeftHeader{
+	width:300px;
+	margin-top:10px;
+}
+#selLogo h1 a{
+	width:288px;
+	height:52px;
+	text-indent:-2000em;
+	overflow:hidden;
+	display:block;
+}
+#selLogo h1 {
+	background:url(../images/logo.png) no-repeat;
+	width:288px;
+	height:52px;
+}
+#selLogo{
+	padding:20px 0 0 5px;
+}
+/*END OF LEFTHEADER*/
+/*RIGHT HEADER*/
+#selRightHeader{
+	width:230px;
+	margin-top:20px;
+}
+#selSearch .clsToptext{
+	width:170px;
+	padding:5px 0;
+	border:1px solid #999;
+	color:#fff;
+	background-color:#000;
+	font:12px Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	margin-right:5px;
+}
+#selSearch .clsSubmitBt1 {
+	background:url(../images/go_btn.png) no-repeat;
+	border:none;
+	width:37px;
+	height:31px;
+	color:#fff;
+	text-align:center;
+	vertical-align:middle;
+	font-weight:bold;
+}
+/*END OF RIGHT HEADER*/
+/*END OF RIGHT HEADER*/
+/*END OF HEADER*/
+#main_box{
+	padding:25px 0;
+	color:#fff;
+}
+/*SUB HEADER */
+#subHeader {
+	overflow:hidden;
+	display:block;
+	}
+#selSubHeader li{
+	line-height:35px;
+	height:35px;
+	width:83px;
+	float:right;
+	text-align:center;
+	margin-left:3px;
+}
+#selSubHeader li a{
+	color:#fff;
+	text-decoration:none;
+	display:block; 
+	width:83px;
+	height:35px;
+}
+#selSubHeader li a:hover, #selSubHeader .clsActive{
+	background:url(../images/li_hover.jpg) repeat-x center top;
+	color:#000;
+	width:83px;
+	height:35px;
+ }
+#selSubHeader .clsActive a{
+	color:#000;
+}
+/* END OF THE SUBHEADER */
+.clsBanner{
+	background:url(../images/banner.jpg) no-repeat;
+	width:935px;
+	height:308px;
+	margin:5px 3px;
+}
+.clsBottom {
+	background:url(../images/bottom.jpg) no-repeat scroll center bottom;
+	padding-bottom:10px;
+}
+.clsTop {
+	background:url(../images/top.jpg) no-repeat scroll center top;
+	padding-top:10px;
+}
+.clsCenter {
+	background:url(../images/center.jpg) repeat-y scroll 0 0;
+	padding:5px 5px 40px;
+}
+.content{
+	padding:10px 5px;
+}
+/*SIDEBAR*/
+.sidebar1,.sidebar2{
+	width:216px;
+}
+.sidebar1 h3,.sidebar2 h3{
+	background:url(../images/h3_bg001.jpg) no-repeat;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#fff;
+	text-align:center;
+	height:43px;
+	line-height:50px;
+}
+.sidebar1 p,.sidebar2 p{
+	color:#000;
+	text-align:justify;
+}
+/*MAIN ROUNTED CORNERS*/
+.inner_tb{
+	background:#fff url(../images/inner_tb.jpg) repeat-x top;
+	margin-top:5px;
+}
+.inner_bb{
+	background:url(../images/inner_bb.jpg) repeat-x bottom;
+}
+.inner_lb{
+	background:url(../images/inner_lb.jpg) 0px 0px repeat-y;
+}
+.inner_rb{
+	background:url(../images/inner_rb.jpg) right 0px repeat-y;
+}
+.inner_tlc{
+	background:url(../images/inner_tlc.jpg) left top no-repeat;
+}
+.inner_trc{
+	background:url(../images/inner_trc.jpg) right top no-repeat;
+}
+.inner_blc{
+	background:url(../images/inner_blc.jpg) left bottom  no-repeat;
+}
+.inner_brc{
+	background:url(../images/inner_brc.jpg) right bottom no-repeat;
+	padding:5px;
+	margin-bottom:10px;
+	height:1%;
+}
+* html .cls100_p{
+	width:100%;
+}
+#selNews,#selteamtrainer,.clsQuickLinks{
+	padding:5px;
+}
+#selNews span{
+	color:#000;
+	font-weight:bold;
+}
+#selNews p {
+	margin:10px 0;
+	text-align:justify;
+	color:#000;
+}
+#selNews li{
+	border-bottom:1px dashed #ccc;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	line-height:13px;
+}
+#selNews .clsNoBorder{
+	border:none;
+}
+.sidebar1 .clsRead,.sidebar2 .clsRead{
+	margin:0 0 0 120px;
+	padding:10px 0;
+}
+.sidebar1 .clsRead a,.sidebar2 .clsRead a{
+	padding-left:7px;
+	}
+.clsRead{
+	background:url(../images/read_btn.jpg) no-repeat scroll right;
+	width:76px;
+	height:23px;
+	line-height:20px;
+	text-align:right;
+}
+.clsRead a{
+	color:#fff;
+	padding-right:5px;
+}
+.clschampion{
+	margin:10px 0;
+}
+.sidebar2 li{
+	background:url(../images/list_icon.jpg) no-repeat left 7px;
+	padding-left:15px;
+}
+.sidebar2 li a{
+	font:12px Arial, Helvetica, sans-serif;
+	line-height:20px;
+}
+.sidebar2 li a:hover{
+	text-decoration:underline;
+}
+.sidebar2 ul{
+	padding:10px 0;
+}
+#selservice,#selOrg {
+	margin-bottom:10px;
+	padding:0 7px;
+}
+/*END OF SIDEBAR*/
+/*MAIN*/
+#main {
+	float:left;
+	margin-left:10px;
+	width:480px;
+}
+#selWelcome h2{
+	font:bold 24px Arial, Helvetica, sans-serif;
+	color:#000;
+}
+#selWelcome span{
+	font:bold 14px Arial, Helvetica, sans-serif;
+	padding:10px 0;
+	color:#000;
+}
+#selWelcome p,#selFeat_service p{
+	color:#000;
+	text-align:justify;
+	padding:4px 0;
+}
+#selWelcome img,#selFeat_service img{
+	float:left;
+	margin-right:10px;
+}
+#main .clsRead {
+	margin-left:320px;
+	text-align:right;
+	padding:10px 0;
+}
+#selFeat_service {
+	padding:0 10px;
+}
+#selFeat_service h2{
+	color:#FBA802;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	margin:15px 0;
+}
+#selFeat_service .clsRead a{
+	padding-left:5px;
+}
+.clscommon {
+	padding:10px 0 15px;
+}
+.clslist li{
+	background:url(../images/list_icon.jpg)  no-repeat left 11px;
+	padding-left:15px;
+}
+.clslist li a{
+	font:12px Arial, Helvetica, sans-serif;
+	line-height:26px;
+	text-decoration:underline;
+}
+.clslist li a:hover{
+	text-decoration:none;
+}
+.claer{
+	clear:both;
+}
+.clslist{
+	width:230px;
+}
+.clsbot{
+	color:#000;
+	clear:both;
+	padding:10px 0;
+}
+/*END OF MAIN*/
+/*FOOTER*/
+#footer{
+	clear:both;
+	text-align:center;
+	margin:20px 0;
+}
+#footer li{
+	display:inline;
+	}
+#footer li a{
+	color:#fff;
+	padding:0 5px;
+}
+#footer li a:hover{
+	text-decoration:underline;
+}
+#footer p{
+	color:#fff;
+	padding:10px 0;
+}
+#footer p a{
+	color:#fff;
+	text-decoration:underline;
+	padding:0 3px;
+}
+#footer p a:hover{
+	text-decoration:none;
+}
+/*END OF FOOTER*/
+.clscenter_boxBottom {
+	background:url(../images/cb_bottom.jpg) no-repeat scroll center bottom;
+	padding-bottom:12px;
+}
+.clscenter_boxTop {
+	background:url(../images/cb_top.jpg) no-repeat scroll center top;
+	padding-top:2px;
+}
+.clscenter_boxCenter {
+	background:url(../images/cb_top.jpg) repeat-y scroll center top;
+	padding:10px;
+		
+}

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @canchas_futbol.nombre %>
+</p>
+
+<p>
+  <b>Caracteristicas:</b>
+  <%= @canchas_futbol.caracteristicas %>
+</p>
+
+<p>
+  <b>Tarifa:</b>
+  <%= @canchas_futbol.tarifa %>
+</p>
+
+<p>
+  <b>Promocion:</b>
+  <%= @canchas_futbol.promocion %>
+</p>
+
+<p>
+  <b>Turnos:</b>
+  <%= @canchas_futbol.turnos %>
+</p>
+
+<p>
+  <b>Locals:</b>
+  <%= @canchas_futbol.locals %>
+</p>
+
+
+<%= link_to 'Edit', edit_canchas_futbol_path(@canchas_futbol) %> |
+<%= link_to 'Back', canchas_futbols_path %>

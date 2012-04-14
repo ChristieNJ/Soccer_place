@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  caracteristicas: MyString
+  tarifa: MyString
+  promocion: MyString
+  turnos: 
+  locals: 
+  comentarios: 
+
+two:
+  nombre: MyString
+  caracteristicas: MyString
+  tarifa: MyString
+  promocion: MyString
+  turnos: 
+  locals: 
+  comentarios: 

@@ -1,0 +1,10 @@
+.clearfix{
+ zoom: 1;     /* triggers hasLayout */
+} 
+
+/*png fix*/
+#selLogo h1,#selSearch .clsSubmitBt1 { behavior: url(js/iepngfix.htc);}
+
+* html .clscenter_boxBottom {
+	height:1%;
+}

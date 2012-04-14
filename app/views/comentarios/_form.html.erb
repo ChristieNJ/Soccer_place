@@ -20,8 +20,8 @@
     <%= f.number_field :calificacion %>
   </div>
   <div class="field">
-    <%= f.label :locals %><br />
-    <%=  f.collection_select :locals_id, Local.all, :id, :nombre, :prompt => true %>
+    <%= f.label :canchas_futbols %><br />
+    <%=  f.collection_select : canchas_futbol_id, canchas_futbol.all, :id, :nombre, :prompt => true %>
 
   </div>
   <div class="actions">

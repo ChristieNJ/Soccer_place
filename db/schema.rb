@@ -11,7 +11,50 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120413235449) do
+ActiveRecord::Schema.define(:version => 20120414143725) do
+
+  create_table "alquilers", :force => true do |t|
+    t.string   "fecha"
+    t.string   "HoraIni"
+    t.string   "HoraFin"
+    t.integer  "cancha_futbol_id"
+    t.integer  "usuarios_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "alquilers", ["cancha_futbol_id"], :name => "index_alquilers_on_cancha_futbol_id"
+  add_index "alquilers", ["usuarios_id"], :name => "index_alquilers_on_usuarios_id"
+
+  create_table "cancha_futbols", :force => true do |t|
+    t.string   "nombre"
+    t.string   "caracteristicas"
+    t.string   "tarifa"
+    t.string   "promocion"
+    t.integer  "turnos_id"
+    t.integer  "locals_id"
+    t.integer  "comentarios_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "cancha_futbols", ["comentarios_id"], :name => "index_cancha_futbols_on_comentarios_id"
+  add_index "cancha_futbols", ["locals_id"], :name => "index_cancha_futbols_on_locals_id"
+  add_index "cancha_futbols", ["turnos_id"], :name => "index_cancha_futbols_on_turnos_id"
+
+  create_table "canchas_futbols", :force => true do |t|
+    t.string   "nombre"
+    t.string   "caracteristicas"
+    t.decimal  "tarifa"
+    t.string   "promocion"
+    t.integer  "turnos_id"
+    t.integer  "locals_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "canchas_futbols", ["locals_id"], :name => "index_canchas_futbols_on_locals_id"
+  add_index "canchas_futbols", ["turnos_id"], :name => "index_canchas_futbols_on_turnos_id"
 
   create_table "comentarios", :force => true do |t|
     t.text     "texto"
@@ -22,6 +65,25 @@ ActiveRecord::Schema.define(:version => 20120413235449) do
   end
 
   add_index "comentarios", ["locals_id"], :name => "index_comentarios_on_locals_id"
+
+  create_table "coments", :force => true do |t|
+    t.text     "texto"
+    t.integer  "calificacion"
+    t.integer  "canchas_futbols_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  add_index "coments", ["canchas_futbols_id"], :name => "index_coments_on_canchas_futbols_id"
+
+  create_table "evento_deportivos", :force => true do |t|
+    t.string   "nombre"
+    t.string   "premio"
+    t.integer  "CantidadLinEq"
+    t.string   "plazoinscripcion"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
   create_table "locals", :force => true do |t|
     t.string   "nombre"

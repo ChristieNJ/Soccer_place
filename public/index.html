@@ -1,241 +1,244 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
-
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
-
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
-
-
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!--[if IE ]>
+<link href="css/iefix.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+<body>
+<!--TOP-->
+<div id="top">
+  <ul>
+    <li><a href="#main">Skip to main content</a></li>
+    <li><a href="#selSubHeader">Skip to Navigation Links</a></li>
+    <li><a href="#footer">Skip to Footer</a></li>
+  </ul>
+</div>
+<!--END OF TOP-->
+<!--CONTAINER-->
+<div id="container">
+  <!--HEADER-->
+  <div id="header" class="clearfix">
+    <!--LEFT HEADER-->
+    <div id="selLeftHeader" class="clsFloatLeft">
+      <div id="selLogo">
+        <h1><a href="index.html">comapny logo</a></h1>
       </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
     </div>
-  </body>
+    <!--END OF LEFT HEADER-->
+    <!--RIGHT HEADER-->
+    <div id="selRightHeader" class="clsFloatRight">
+      <div id="selSearch">
+        <p>
+          <input class="clsToptext" type="text" value="Search..." />
+          <input type="button" class="clsSubmitBt1" value="Go"/>
+        </p>
+      </div>
+    </div>
+    <!--END OF RIGHT HEADER-->
+  </div>
+  <!--END OF HEADER-->
+  <!--MAINBOX-->
+  <div id="main_box">
+    <div class="clsBottom">
+      <div class="clsTop">
+        <div class="clsCenter ">
+		<!--SELSUBHEADER-->
+		<div id="subHeader" class="clearfix">
+		<div id="selSubHeader">
+     	 <ul class="clearfix">
+        <li><a href="canchas_futbols/new"> Canchas </a></li>
+		<li><a href="publicidades"> Publicidades </a></li>
+		<li><a href="comentarios/new"> Comentarios </a></li>
+        <li><a href="alquilers/new">Alquiler </a></li>
+        <li><a href="turnos"> Turnos </a></li>        
+		 <li><a href="locals"> Locales</a></li> 
+		<li><a href="evento_deportivos/new"> Eventos deportivoss</a></li> 
+        <li class="clsActive"><a href="index.html">Inicio</a></li>
+      </ul>
+    </div>
+	    </div>
+	    <!--END OF SELSUBHEADER-->
+          <!--CLSCENTERBOX-->
+          <div class="clsCenter_box">
+            <div class="clscenter_boxBottom">
+              <div class="clscenter_boxTop">
+                <div class="clscenter_boxCenter">
+                  <div class="clsBanner"></div>
+                  <!--CONTENT-->
+                  <div class="content clearfix">
+                    <!--SIDEBAR1-->
+                    <div class="sidebar1 clsFloatLeft">
+                      <h3>CLUB NEWS</h3>
+                      <div class="inner_tb">
+                        <div class="inner_bb">
+                          <div class="inner_lb">
+                            <div class="inner_rb">
+                              <div class="inner_tlc">
+                                <div class="inner_trc">
+                                  <div class="inner_blc">
+                                    <div class="inner_brc">
+                                      <div class="cls100_p">
+                                        <div id="selNews">
+                                          <ul>
+                                            <li><span>14-05-2012</span>
+                                              <p>Comunicado: Se informa que se esta por aperturar el inicio de clases de futbol en la escuela El porvenir </p>
+                                            </li>                                            
+                                            <li class="clsNoBorder"><span>05-05-2012</span>
+                                              <p>Comunicado: se va a realizar el campeonato interclubes empresarial en la ciudad de Lima.</p>
+                                            </li>
+                                          </ul>
+                                        </div>                                        
+										<p class="clsRead"><a href="locals/new">Registrar Local</a></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clschampion">
+                        <p><a href="#"><img src="images/side_img.jpg" alt="" /></a></p>
+                      </div>
+                    </div>
+                    <!--END OF SIDEBAR1-->
+                    <!-- SIDEBAR2-->
+                    <div class="sidebar2 clsFloatRight">
+                      <h3>CLUB NEWS</h3>
+                      <div class="inner_tb">
+                        <div class="inner_bb">
+                          <div class="inner_lb">
+                            <div class="inner_rb">
+                              <div class="inner_tlc">
+                                <div class="inner_trc">
+                                  <div class="inner_blc">
+                                    <div class="inner_brc">
+                                      <div class="cls100_p">
+                                        <div id="selservice">
+                                          <ul>
+                                            <li><a href="#">Se invita al Club: Amigos unidos a partipar en el campeonato de clubes</a></li>                                            
+                                            <li><a href="#">Se felicita al nuevo club: Club Boys por la obtencion del titulo obtenido la ultima semana</a></li>
+                                          </ul>
+                                        </div>                                        
+										<p class="clsRead"><a href="locals/new">Registrar Local</a></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h3>organisations</h3>
+                      <div class="inner_tb">
+                        <div class="inner_bb">
+                          <div class="inner_lb">
+                            <div class="inner_rb">
+                              <div class="inner_tlc">
+                                <div class="inner_trc">
+                                  <div class="inner_blc">
+                                    <div class="inner_brc">
+                                      <div class="cls100_p">
+                                        <div id="selOrg">
+                                          <ul>
+                                            <li><a href="#">Lorem Ipsum is simply dummy text of the printing</a></li>
+                                            
+                                          </ul>
+                                        </div>
+                                        <p class="clsRead"><a href="#">Read more</a></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--END OF SIDEBAR2-->
+                    <!--MAIN-->
+                    <div id="main">
+                      <div class="inner_tb">
+                        <div class="inner_bb">
+                          <div class="inner_lb">
+                            <div class="inner_rb">
+                              <div class="inner_tlc">
+                                <div class="inner_trc">
+                                  <div class="inner_blc">
+                                    <div class="inner_brc">
+                                      <div class="cls100_p">
+                                        <div id="selWelcome">
+                                          <p><a href="#"><img src="images/football.jpg" alt="" /></a></p>
+                                          <h2>Bienvenidos a la videnita!</h2>
+                                          <p>Conozca nuestras canchas y elija la de su preferencia en el horario más conveniente y disfrute de un tiempo de actividad deportiva, recreación y diversión. </p>
+                                          <p>Todos los servicios a su disposición para hacer de su experiencia una agradable estadía. </p>
+                                          <p class="clsRead"><a href="usuarios/new">Registrar</a></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="selFeat_service">
+                          <h2>Nuestros Servicios</h2>
+                          <p>Contamos con los siguientes servicios adicionales para brindarles todas las comodidades para una experiencia placentera. </p>
+                          <div class="clscommon clearfix">
+                            <div class="clsimage clsFloatLeft">
+                              <p><a href="#"><img src="images/main_img.jpg" alt="" /> </a></p>
+                            </div>
+                            <div class="clslist clsFloatRight">
+                              <ul>
+								<a href="#"> <h2>Pelotas:</h2>Con medida y peso oficial. </a>
+                                <a href="#"> <h2>Chalecos:</h2>Varios modelos y colores. </a>
+								<a href="#"> <h2>Camerinos:</h2>4 camerinos con duchas, vestidores, y SS.HH. </a>
+                                                               
+                              </ul>
+                            </div>
+                          </div>
+                          
+                          <p class="clsRead"><a href="serv_adicionales/new">Registrar</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--END OF MAIN-->
+                  </div>
+                  <!--END OF CONTENT-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END OF CLSCENTERBOX-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END OF MAINBOX-->
+  <!--FOOTER-->
+  <div id="footer">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="locals"> Locales</a></li>       
+	  <li><a href="turnos"> Turnos </a></li>  
+      <li><a href="alquilers/new"> Alquiler </a></li>
+	  <li><a href="comentarios/new"> Comentarios </a></li>
+      <li><a href="publicidades">Publicidades </a></li>
+      <li><a href="canchas_futbols/new"> Canchas </a></li>
+	  <li><a href="evento_deportivos/new"> Eventos deportivoss</a></li> 
+    </ul>
+    <p>Soccers@2009 Designed by <a href="http://cogzideltemplates.com/" target="_blank">Cogzidel Templates</a>Valid <a href="http://validator.w3.org/check/referer" target="_blank">XHTML</a> | Valid <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS</a></p>
+  </div>
+  <!--END OF FOOTER-->
+</div>
+<!--END OF CONTAINER-->
+</body>
 </html>

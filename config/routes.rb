@@ -1,4 +1,14 @@
 SoccerPlace::Application.routes.draw do
+  resources :coments
+
+  resources :canchas_futbols
+
+  resources :alquilers
+
+  resources :cancha_futbols
+
+  resources :evento_deportivos
+
   resources :publicidades
 
   resources :publicidads

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @evento_deportivo.nombre %>
+</p>
+
+<p>
+  <b>Premio:</b>
+  <%= @evento_deportivo.premio %>
+</p>
+
+<p>
+  <b>Cantidadlineq:</b>
+  <%= @evento_deportivo.CantidadLinEq %>
+</p>
+
+<p>
+  <b>Plazoinscripcion:</b>
+  <%= @evento_deportivo.plazoinscripcion %>
+</p>
+
+
+<%= link_to 'Edit', edit_evento_deportivo_path(@evento_deportivo) %> |
+<%= link_to 'Back', evento_deportivos_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fecha: MyString
+  HoraIni: MyString
+  HoraFin: MyString
+  cancha_futbol: 
+  usuarios: 
+
+two:
+  fecha: MyString
+  HoraIni: MyString
+  HoraFin: MyString
+  cancha_futbol: 
+  usuarios: 

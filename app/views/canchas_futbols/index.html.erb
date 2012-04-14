@@ -1,0 +1,32 @@
+<h1>Listing canchas_futbols</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Caracteristicas</th>
+    <th>Tarifa</th>
+    <th>Promocion</th>
+    <th>Turnos</th>
+    <th>Locals</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @canchas_futbols.each do |canchas_futbol| %>
+  <tr>
+    <td><%= canchas_futbol.nombre %></td>
+    <td><%= canchas_futbol.caracteristicas %></td>
+    <td><%= canchas_futbol.tarifa %></td>
+    <td><%= canchas_futbol.promocion %></td>
+
+    <td><%= link_to 'Show', canchas_futbol %></td>
+    <td><%= link_to 'Edit', edit_canchas_futbol_path(canchas_futbol) %></td>
+    <td><%= link_to 'Destroy', canchas_futbol, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Canchas futbol', new_canchas_futbol_path %>

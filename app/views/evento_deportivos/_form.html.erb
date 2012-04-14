@@ -1,0 +1,33 @@
+<%= form_for(@evento_deportivo) do |f| %>
+  <% if @evento_deportivo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@evento_deportivo.errors.count, "error") %> prohibited this evento_deportivo from being saved:</h2>
+
+      <ul>
+      <% @evento_deportivo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :premio %><br />
+    <%= f.text_field :premio %>
+  </div>
+  <div class="field">
+    <%= f.label :CantidadLinEq %><br />
+    <%= f.number_field :CantidadLinEq %>
+  </div>
+  <div class="field">
+    <%= f.label :plazoinscripcion %><br />
+    <%= f.text_field :plazoinscripcion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  premio: MyString
+  CantidadLinEq: 1
+  plazoinscripcion: MyString
+
+two:
+  nombre: MyString
+  premio: MyString
+  CantidadLinEq: 1
+  plazoinscripcion: MyString

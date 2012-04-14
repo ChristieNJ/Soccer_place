@@ -1,0 +1,29 @@
+<h1>Listing evento_deportivos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Premio</th>
+    <th>Cantidadlineq</th>
+    <th>Plazoinscripcion</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @evento_deportivos.each do |evento_deportivo| %>
+  <tr>
+    <td><%= evento_deportivo.nombre %></td>
+    <td><%= evento_deportivo.premio %></td>
+    <td><%= evento_deportivo.CantidadLinEq %></td>
+    <td><%= evento_deportivo.plazoinscripcion %></td>
+    <td><%= link_to 'Show', evento_deportivo %></td>
+    <td><%= link_to 'Edit', edit_evento_deportivo_path(evento_deportivo) %></td>
+    <td><%= link_to 'Destroy', evento_deportivo, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Evento deportivo', new_evento_deportivo_path %>

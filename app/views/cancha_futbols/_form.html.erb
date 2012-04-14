@@ -1,0 +1,42 @@
+<%= form_for(@cancha_futbol) do |f| %>
+  <% if @cancha_futbol.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cancha_futbol.errors.count, "error") %> prohibited this cancha_futbol from being saved:</h2>
+
+      <ul>
+      <% @cancha_futbol.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :caracteristicas %><br />
+    <%= f.text_field :caracteristicas %>
+  </div>
+  <div class="field">
+    <%= f.label :tarifa %><br />
+    <%= f.text_field :tarifa %>
+  </div>
+  <div class="field">
+    <%= f.label :promocion %><br />
+    <%= f.text_field :promocion %>
+  </div>
+  <div class="field">
+    <%= f.label :turnos %><br />
+    <%= f.collection_select :turnos_id, Turno.all, :id, :nombre, :prompt => true  %>
+  </div>
+  <div class="field">
+    <%= f.label :locals %><br />
+    <%= f.collection_select :locals_id, Local.all, :id, :nombre, :prompt => true  %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

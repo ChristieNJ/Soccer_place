@@ -1,3 +1,3 @@
 class Comentario < ActiveRecord::Base
-  belongs_to :locals
+  belongs_to :canchas_futbol
 end

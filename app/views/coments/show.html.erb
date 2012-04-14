@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Texto:</b>
+  <%= @coment.texto %>
+</p>
+
+<p>
+  <b>Calificacion:</b>
+  <%= @coment.calificacion %>
+</p>
+
+<p>
+  <b>Canchas futbols:</b>
+  <%= @coment.canchas_futbols %>
+</p>
+
+
+<%= link_to 'Edit', edit_coment_path(@coment) %> |
+<%= link_to 'Back', coments_path %>
